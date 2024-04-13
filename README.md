@@ -18,17 +18,16 @@ Com a implementação da arquitetura hexagonal podemos separar as preocupações
   <img src="https://refactoring.guru/images/patterns/content/adapter/adapter-en.png" alt="Adapter" width="400px" height="200px" style="vertical-align: middle;">
 </p>
 
+<br><br><br>
 
-
-
-## 📃 Key Features:
-  📌 Registration, listing and consultation of products with calculated profit details. <br>
-  📌 Product stock update. <br>
-  📌 Finalizing product purchases, automatically updating stock and quantity sold. <br>
-  📌 Advanced filters for browsing products by category and price range. <br>
-  📌 Consultation of best-selling products. <br>
-## 
-## 📃 Product entity:
+## 📃 Principais recursos:
+  📌 Cadastro, listagem e consulta de produtos com detalhamento do lucro calculado. <br>
+  📌 Atualização de estoque de produtos. <br>
+  📌 Finalizar compras de produtos, atualizando automaticamente estoque e quantidade vendida. <br>
+  📌 Filtros avançados para navegar pelos produtos por categoria e faixa de preço. <br>
+  📌 Consulta dos produtos mais vendidos. <br>
+<br><br>
+## 📃 Entidade dos Produtos no banco de dados H2 :
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
