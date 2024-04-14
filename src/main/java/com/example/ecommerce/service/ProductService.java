@@ -42,8 +42,6 @@ public class ProductService {
 
         if (product.isEmpty()) return ResponseEntity.status(204).build();
 
-
-
         int stockQuantity = product.get().getStockQuantity() - 1;
         int soldAmount = product.get().getSoldAmount() + 1;
 
