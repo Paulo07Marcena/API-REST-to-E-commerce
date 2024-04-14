@@ -58,7 +58,7 @@ Com a implementação da arquitetura hexagonal podemos separar as preocupações
 - **Método HTTP:** POST
 - **URL:** `http://localhost:8080/products`
 
-### Body da Requisição (JSON):
+#### Body da Requisição (JSON):
 
 ```json
 {
@@ -69,3 +69,51 @@ Com a implementação da arquitetura hexagonal podemos separar as preocupações
   "salePrice": 145.50,
   "purchasePrice": 85.00
 }
+```
+
+<br><br>
+
+#### 🟨 Endpoint para realizar uma compra pelo id do produto
+- **Método HTTP:** POST
+- **URL:** `http://localhost:8080/products/{id}/purchase`
+
+<br><br>
+#### 🟩 Endpoint para visualizar todos os produtos
+- **Método HTTP:** GET
+- **URL:** `http://localhost:8080/products`
+
+<br><br>
+#### 🟩 Endpoint para visualiza algum produto como cliente
+- **Método HTTP:** GET
+- **URL:** `http://localhost:8080/products/{id}/client`
+
+<br><br>
+#### 🟩 Endpoint para visualizar algum produto como vendedor
+- **Método HTTP:** GET
+- **URL:** `http://localhost:8080/products/{id}`
+
+<br><br>
+#### 🟩 Endpoint para visualizar os produtos mais vendidos
+- **Método HTTP:** GET
+- **URL:** `http://localhost:8080/products/bestSellers?soldAmount={soldAmount}`
+
+<br><br>
+#### 🟩 Endpoint para filtrar os produtos por categoria, preço inicial e preço final
+- **Método HTTP:** GET
+- **URL:** `http://localhost:8080/products/filter?category={category}&initialPrice={initialPrice}&finalPrice={finalPrice}`
+
+<br><br>
+#### 🟪 Endpoint para atualizar a quantidade de produtos no estoque
+- **Método HTTP:** PATCH
+- **URL:** `http://localhost:8080/products/{id}/stock`
+
+```json
+{
+    "newQuantity": 5
+}
+```
+<br><br>
+Todos esses endpoints estão dentro do arquivo PostmanCollection.json para ser importado dentro de softwares como o própio Postman, Insominia e outros. 
+<p align="center">
+  <img src="https://github.com/Paulo07Marcena/API-REST-to-E-commerce/blob/main/README%20itens/Postman%20collection%20on%20application%20.png" alt="Postman collection" width="200px" height="40px" style="vertical-align: middle; margin-right:"200px";">
+</p>
