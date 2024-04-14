@@ -115,5 +115,5 @@ Com a implementação da arquitetura hexagonal podemos separar as preocupações
 <br><br>
 Todos esses endpoints estão dentro do arquivo PostmanCollection.json para ser importado dentro de softwares como o própio Postman, Insominia e outros. 
 <p align="center">
-  <img src="https://github.com/Paulo07Marcena/API-REST-to-E-commerce/blob/main/README%20itens/Postman%20collection%20on%20application%20.png" alt="Postman collection" width="200px" height="50px" style="vertical-align: middle; margin-right:"200px";">
+  <img src="https://github.com/Paulo07Marcena/API-REST-to-E-commerce/blob/main/README%20itens/Postman%20collection%20on%20application%20.png" alt="Postman collection" width="200px" height="40px" style="vertical-align: middle; margin-right:"200px";">
 </p>
