@@ -14,7 +14,7 @@ Com a implementação da arquitetura hexagonal podemos separar as preocupações
 <b>Singleton:</b> Padrão de projeto criacional que permite garantir que uma classe tenha apenas uma instância, ao mesmo tempo que fornece um ponto de acesso global para essa instância. <br>
 <b>Adapter:</b> Padrão de projeto estrutural que permite a colaboração de objetos com interfaces incompatíveis.
 <p align="center">
-  <img src="https://refactoring.guru/images/patterns/content/singleton/singleton.png" alt="Arquitetura Hexagonal" width="400px" height="200px" style="vertical-align: middle; margin-right:"200px";">
+  <img src="https://refactoring.guru/images/patterns/content/singleton/singleton.png" alt="singleton.png" width="400px" height="200px" style="vertical-align: middle; margin-right:"200px";">
   <img src="https://refactoring.guru/images/patterns/content/adapter/adapter-en.png" alt="Adapter" width="400px" height="200px" style="vertical-align: middle;">
 </p>
 
@@ -27,6 +27,13 @@ Com a implementação da arquitetura hexagonal podemos separar as preocupações
   📌 Filtros avançados para navegar pelos produtos por categoria e faixa de preço. <br>
   📌 Consulta dos produtos mais vendidos. <br>
 <br><br>
+
+## 📃 Estrutura do projeto:
+<p align="center">
+  <img src="https://github.com/Paulo07Marcena/API-REST-to-E-commerce/blob/main/README%20itens/Project%20estructure.png" alt="Estrutura do projeto" width="300px" height="300px" style="vertical-align: middle; margin-right:"200px";">
+</p>
+<br><br>
+
 ## 📃 Entidade dos Produtos no banco de dados H2 :
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -37,3 +44,28 @@ Com a implementação da arquitetura hexagonal podemos separar as preocupações
     private Integer soldAmount;
     private Double salePrice;
     private Double purchasePrince;
+<br><br>
+
+## 📃 Postman collection: 
+<p align="center">
+  <img src="https://github.com/Paulo07Marcena/API-REST-to-E-commerce/blob/main/README%20itens/Postman%20collection.png" alt="Postman collection" width="300px" height="300px" style="vertical-align: middle; margin-right:"200px";">
+</p>
+<br><br>
+
+
+
+#### 🟨 Endpoint para Criar Produtos
+- **Método HTTP:** POST
+- **URL:** `http://localhost:8080/products`
+
+### Body da Requisição (JSON):
+
+```json
+{
+  "name": "Drone com Câmera",
+  "manufacturer": "E88",
+  "category": "Eletrônicos",
+  "stockQuantity": 20,
+  "salePrice": 145.50,
+  "purchasePrice": 85.00
+}
